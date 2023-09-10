@@ -4,8 +4,8 @@ from utils import create_node
 
 def uniform_cost_tree_search(problem):
     initial_node = create_node(problem.initial_state(), None,
-                               "", 0, 0)
-    frontier = [(0, initial_node)]
+                               "", 0, 0) 
+    frontier = [(0, initial_node)] 
     n_visits = 0
     while True:
         if not frontier:
